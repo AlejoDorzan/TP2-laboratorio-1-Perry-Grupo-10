@@ -21,5 +21,24 @@ public class OrniAzul extends PapaCastor{
             this.propulsion = (int) 5.0;
         }
     }
+     @Override
+    public void nadar() {
+        double velocidadTotal = super.getVelocidad() + propulsion;
+        System.out.println(nombre + " nadando a velocidad de " + velocidadTotal + " km/h (velocidad padre + propulsión)");
+    }
     
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+    
+    @Override
+    public int getPropulsion() {
+        return propulsion;
+    }
+    
+    public double getVelocidadTotal() {
+        return super.getVelocidad() + propulsion;
+    }
+}
     
