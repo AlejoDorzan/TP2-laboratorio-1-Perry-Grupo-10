@@ -5,20 +5,20 @@ import java.util.Scanner;
 
 public class PapaCastor {
     protected String nombre;
-    protected double velocidad;
-    protected double longitudCola; // cm
-    protected int propulsion; //km/h (5..10)
+    protected int velocidad;
+    protected int longitudCola; // cm
+    protected double propulsion; //km/h (5..10)
     // Naty: Agregué atributo velocidad, lo sumé al constructor
     //Agregué también los getters y setters
     //Mati:
     //Cambie el nombre de Castor a PapaCastor.
-    public PapaCastor(String nombre, double velocidad, double longitudCola, int propulsion){
+    public PapaCastor(String nombre, int velocidad, int longitudCola, double propulsion){
         this.nombre = nombre;
          Scanner scanner =new Scanner (System.in);
         System.out.println("Ingrese la velocidad del castor (km/s): ");
         this.velocidad = scanner.nextInt();
         
-        this.longitudCola = Math.max(1, longitudCola);
+        this.longitudCola = (int) Math.max(1, longitudCola);
         //La consigna pide 5..10 km/h. Birnakuzanis si se pasan.
         if(propulsion < 5) propulsion = 5;
         if(propulsion > 10) propulsion = 10;
@@ -31,19 +31,19 @@ public class PapaCastor {
         return nombre;
     }
 
-    public double getVelocidad() {
+    public int getVelocidad() {
         return velocidad;
     }
 
-    public void setVelocidad(double velocidad) {
+    public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
     }
 
-    public double getLongitudCola() {
+    public int getLongitudCola() {
         return longitudCola;
     }    
 
-    public int getPropulsion() {
+    public double getPropulsion() {
         return propulsion;
     }
 
@@ -51,19 +51,7 @@ public class PapaCastor {
         System.out.println( this.nombre + " nada a " + this.propulsion + " km/h");
     }
 
-    //Getters
-    public String getNombre() {
-        return nombre;
-    }
-
-    public double getLongitudCola() {
-        return longitudCola;
-    }    
-
-    public int getPropulsion() {
-        return propulsion;
-    }
-
+    
     //Mati:
     //Implemente el metodo tocarGuitarra() como muestra en el pdf.
     //Importe la libreria java.util.Random, para generar el valor de cuerda entre 1 y 6.
