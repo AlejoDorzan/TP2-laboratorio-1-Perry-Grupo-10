@@ -108,7 +108,17 @@ public class TP2Laboratorio1Perry {
                 key.nextLine(); 
             }
         }
-        //Agregar métodos de Ornis Azules---
+        
+        //Agrego los métodos el los Ornis Azules
+        
+        System.out.println("\n Habilidades de " + orniAzul1.getNombre());
+        orniAzul1.nadar(); // Método sobrescrito con propulsión
+        orniAzul1.tocarGuitarra(); // Heredado del papá castor
+        
+        // Habilidades del OrniAzul2
+        System.out.println("\n--- Habilidades de " + orniAzul2.getNombre());
+        orniAzul2.nadar(); // Método sobrescrito con propulsión
+        orniAzul2.tocarGuitarra(); // Heredado del papá castor
         //Agregar arreglo, lista de nadadores y el iterator para la propulsion---
     }
 }
