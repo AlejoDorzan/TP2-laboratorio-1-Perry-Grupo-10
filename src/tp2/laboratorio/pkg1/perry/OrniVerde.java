@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class OrniVerde extends PapaCastor implements MamaPato {
 
     //Constructor
-    public OrniVerde(String nombre, int longitudCola, int propulsion) {
-        super(nombre, longitudCola, propulsion);
+    public OrniVerde(String nombre, int velocidad, int longitudCola, double propulsion) {
+        super(nombre, velocidad, longitudCola, propulsion);
     }
 
     //Implementacion de tocarOrgano() de la interfaz MamaPata
