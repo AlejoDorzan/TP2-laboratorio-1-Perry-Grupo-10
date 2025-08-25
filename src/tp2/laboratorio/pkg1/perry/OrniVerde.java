@@ -2,7 +2,7 @@ package tp2.laboratorio.pkg1.perry;
 
 import java.util.Scanner;
 
-public class OrniVerde extends Castor implements MamaPato {
+public class OrniVerde extends PapaCastor implements MamaPato {
 
     //Constructor
     public OrniVerde(String nombre, int longitudCola, int propulsion) {
