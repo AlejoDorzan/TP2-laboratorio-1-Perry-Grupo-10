@@ -16,12 +16,12 @@ public class OrniVerde extends PapaCastor implements MamaPato {
         System.out.println("\nDo-Re-Mi");
         System.out.println("\nPresiona una tecla para continuar...");
         sn.nextLine(); // espera que el usuario presione una tecla
-        System.out.println("\nFa-Sol-La-Si");
+        System.out.println("Fa-Sol-La-Si");
     }
     
     // M3todo propio: tocarGuitorgan
     public void tocarGuitorgan() {
-        System.out.println("\n" + nombre + " está tocando el guitorgan:");
+        System.out.println("\n" + nombre + " está tocando el guitorgan:\n");
         super.tocarGuitarra();   // invoca el metodo del papá Castor
         this.tocarOrgano();      // invoca el metodo de la interfaz MamaPata
         System.out.println("\ncuac cuaac…!");
