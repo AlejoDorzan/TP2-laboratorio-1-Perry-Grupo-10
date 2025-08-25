@@ -14,7 +14,7 @@ public class TP2Laboratorio1Perry {
         PapaCastor papaCastor = null;
         OrniVerde orniVerde = null;
         String nombre = null;
-        int longitudCola = 0;
+        double longitudCola = 0;
         int propulsion = 0;
 
         System.out.println("\n--- Ingresa los datos de los mamiferos ---");
@@ -22,7 +22,7 @@ public class TP2Laboratorio1Perry {
             try{
                 System.out.println("\n Datos del Papa Castor:");
                 System.out.print("Nombre: "); nombre = key.nextLine();
-                System.out.print("Longitud de la cola (cm): "); longitudCola = key.nextInt();
+                System.out.print("Longitud de la cola (cm): "); longitudCola = key.nextDouble();
                 System.out.print("Propulsion (5km/h a 10km/h): "); propulsion = key.nextInt();
             }catch (NumberFormatException e){
                 System.out.println("Error: Debes ingresar un número valido.");
@@ -45,7 +45,7 @@ public class TP2Laboratorio1Perry {
             try{
                 System.out.println("\n Datos del OrniVerde:");
                 System.out.print("Nombre: "); nombre = key.nextLine();
-                System.out.print("Longitud de la cola (cm): "); longitudCola = key.nextInt();
+                System.out.print("Longitud de la cola (cm): "); longitudCola = key.nextDouble();
                 System.out.print("Propulsion (5km/h a 10km/h): "); propulsion = key.nextInt();
             }catch (NumberFormatException e){
                 System.out.println("Error: Debes ingresar un número valido.");
