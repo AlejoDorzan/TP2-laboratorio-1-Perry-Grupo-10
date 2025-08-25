@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class OrniVerde extends PapaCastor implements MamaPato {
 
     //Constructor
-    public OrniVerde(String nombre, double velocidad, double longitudCola, int propulsion) {
+    public OrniVerde(String nombre, int velocidad, int longitudCola, double propulsion) {
         super(nombre, velocidad, longitudCola, propulsion);
     }
 
