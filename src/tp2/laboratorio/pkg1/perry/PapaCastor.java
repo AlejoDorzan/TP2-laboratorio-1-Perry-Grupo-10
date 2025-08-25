@@ -1,7 +1,6 @@
 package tp2.laboratorio.pkg1.perry;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class PapaCastor {
     protected String nombre;
@@ -14,12 +13,11 @@ public class PapaCastor {
     //Cambie el nombre de Castor a PapaCastor.
     public PapaCastor(String nombre, int velocidad, int longitudCola, double propulsion){
         this.nombre = nombre;
-         Scanner scanner =new Scanner (System.in);
-        System.out.println("Ingrese la velocidad del castor (km/s): ");
-        this.velocidad = scanner.nextInt();
+        this.velocidad = velocidad;
+        this.longitudCola = Math.max(1, longitudCola);
+
         
-        this.longitudCola = (int) Math.max(1, longitudCola);
-        //La consigna pide 5..10 km/h. Birnakuzanis si se pasan.
+        //La consigna pide 5..10 km/h. estables si se pasan.
         if(propulsion < 5) propulsion = 5;
         if(propulsion > 10) propulsion = 10;
         
@@ -57,18 +55,18 @@ public class PapaCastor {
     //Importe la libreria java.util.Random, para generar el valor de cuerda entre 1 y 6.
     public void tocarGuitarra(){
         Random rand = new Random();
-        int cuerda = rand.nextInt(6) + 1; 
-        
+        for (int i = 1; i <= 3; i++) {
+            int cuerda = rand.nextInt(6) + 1; 
+            System.out.println("Toca cuerda " + cuerda);
+        }
         //System.out.println("\n"); // Salto de linea
         
-        for(int i = 1; i <= 3; i++){//Como dice en el pdf, hacer que el metodo imprima 3 cuerdas aleatorias.
-            System.out.println("Toca cuerda" + cuerda); 
-        }
+        
     }
-
     
     @Override
     public String toString() {
         return getClass().getSimpleName() + " {nombre=" + nombre + ", longitudCola=" + longitudCola + " cm, propulsion=" + propulsion + " km/h}";
-    }
+        }
+    
 }
