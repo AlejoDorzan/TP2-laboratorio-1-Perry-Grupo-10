@@ -2,10 +2,10 @@ package tp2.laboratorio.pkg1.perry;
 
 public class Castor {
     protected String nombre;
-    protected int longitudCola; // cm
+    protected double longitudCola; // cm
     protected int propulsion; //km/h (5..10)
 
-    public Castor(String nombre, int longitudCola, int propulsion){
+    public Castor(String nombre, double longitudCola, int propulsion){
         this.nombre = nombre;
         this.longitudCola = Math.max(1, longitudCola);
         //La consigna pide 5..10 km/h. Birnakuzanis si se pasan.
@@ -25,7 +25,7 @@ public class Castor {
         return nombre;
     }
 
-    public int getLongitudCola() {
+    public double getLongitudCola() {
         return longitudCola;
     }    
 
