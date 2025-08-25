@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class OrniAzul extends PapaCastor{
  private String nombre;
-    private int propulsion;
+    private double propulsion;
     private double pico = 6.8; // cm
     private double patas = 7.5; // cm
     
-    public OrniAzul(String nombre, double velocidad, double longitudCola, int propulsion) {
+    public OrniAzul(String nombre, int velocidad, int longitudCola, double propulsion) {
         super(nombre, velocidad, longitudCola,  propulsion);
         this.nombre = nombre;
         
@@ -33,11 +33,11 @@ public class OrniAzul extends PapaCastor{
     }
     
     @Override
-    public int getPropulsion() {
+    public double getPropulsion() {
         return propulsion;
     }
     
-    public double getVelocidadTotal() {
+    public int getVelocidadTotal() {
         return super.getVelocidad() + propulsion;
     }
 }
