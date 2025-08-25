@@ -38,7 +38,8 @@ public class OrniAzul extends PapaCastor{
     }
     
     public int getVelocidadTotal() {
-        return super.getVelocidad() + propulsion;
+         return (int) (super.getVelocidad() + propulsion);
+    
     }
 }
     
