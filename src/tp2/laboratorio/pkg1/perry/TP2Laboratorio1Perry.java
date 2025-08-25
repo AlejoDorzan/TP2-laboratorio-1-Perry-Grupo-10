@@ -109,7 +109,7 @@ public class TP2Laboratorio1Perry {
             }
         }
         
-        //Agrego los métodos el los Ornis Azules
+        //Agrego los métodos el los Ornis Azules Naty
         
         System.out.println("\n Habilidades de " + orniAzul1.getNombre());
         orniAzul1.nadar(); // Método sobrescrito con propulsión
