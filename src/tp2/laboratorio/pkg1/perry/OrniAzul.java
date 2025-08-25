@@ -1,5 +1,5 @@
 package tp2.laboratorio.pkg1.perry;
-
+// Acá cree una parte del OrniAzul - en breve agregamos los métodos
 
 import java.util.Scanner;
 
