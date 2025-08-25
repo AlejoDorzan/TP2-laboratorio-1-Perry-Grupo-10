@@ -57,7 +57,9 @@ public class PapaCastor {
     //Importe la libreria java.util.Random, para generar el valor de cuerda entre 1 y 6.
     public void tocarGuitarra(){
         Random rand = new Random();
-        int cuerda = rand.nextInt(6) + 1;
+        int cuerda = rand.nextInt(6) + 1; 
+        
+        //System.out.println("\n"); // Salto de linea
         
         for(int i = 1; i <= 3; i++){//Como dice en el pdf, hacer que el metodo imprima 3 cuerdas aleatorias.
             System.out.println("Toca cuerda" + cuerda); 

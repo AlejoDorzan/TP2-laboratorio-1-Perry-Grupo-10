@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class TP2Laboratorio1Perry {
 
     public static void main(String[] args) {
+      NuevosDatos
         System.out.println("Prueba Mati");
         System.out.println("Prueba Eze ._.");
 
@@ -120,5 +121,10 @@ public class TP2Laboratorio1Perry {
         orniAzul2.nadar(); // Método sobrescrito con propulsión
         orniAzul2.tocarGuitarra(); // Heredado del papá castor
         //Agregar arreglo, lista de nadadores y el iterator para la propulsion---
+
+        System.out.println("------------ Prueba de OrniVerde ------------"); 
+        OrniVerde o1 = new OrniVerde("prueba", 5, 100);
+        o1.tocarGuitorgan();
+ main
     }
 }
