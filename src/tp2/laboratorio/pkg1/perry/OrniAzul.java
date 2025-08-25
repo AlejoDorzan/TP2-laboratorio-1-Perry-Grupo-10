@@ -16,4 +16,5 @@ public class OrniAzul extends PapaCastor{
         
         }while (propulsion <5 || propulsion >10);
     }
+}
     
