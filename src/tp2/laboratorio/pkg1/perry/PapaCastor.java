@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 public class PapaCastor {
     protected String nombre;
-    protected int velocidad;
-    protected int longitudCola; // cm
+    protected double velocidad;
+    protected double longitudCola; // cm
     protected int propulsion; //km/h (5..10)
     // Naty: Agregué atributo velocidad, lo sumé al constructor
     //Agregué también los getters y setters
     //Mati:
     //Cambie el nombre de Castor a PapaCastor.
-    public PapaCastor(String nombre, int velocidad, int longitudCola, int propulsion){
+    public PapaCastor(String nombre, double velocidad, double longitudCola, int propulsion){
         this.nombre = nombre;
          Scanner scanner =new Scanner (System.in);
         System.out.println("Ingrese la velocidad del castor (km/s): ");
@@ -31,15 +31,15 @@ public class PapaCastor {
         return nombre;
     }
 
-    public int getVelocidad() {
+    public double getVelocidad() {
         return velocidad;
     }
 
-    public void setVelocidad(int velocidad) {
+    public void setVelocidad(double velocidad) {
         this.velocidad = velocidad;
     }
 
-    public int getLongitudCola() {
+    public double getLongitudCola() {
         return longitudCola;
     }    
 
@@ -56,7 +56,7 @@ public class PapaCastor {
         return nombre;
     }
 
-    public int getLongitudCola() {
+    public double getLongitudCola() {
         return longitudCola;
     }    
 
